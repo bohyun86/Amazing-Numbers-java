@@ -1,0 +1,24 @@
+# course config files
+*.yaml
+
+# gradle
+.gradle/
+build
+
+
+# idea config
+.idea
+
+# old stages
+/Amazing Numbers/*
+!/Amazing Numbers/task/
+/Amazing Numbers/task/*
+!/Amazing Numbers/task/src
+
+# Project exclude paths
+/Topics/Anonymous classes properties/Managing a process/out/
+/Topics/Anonymous classes properties/Managing a process/out/production/classes/
+/Topics/Inner classes/Christmas tree/out/
+/Topics/Inner classes/Christmas tree/out/production/classes/
+/Topics/Inner classes/Improve your vehicle/out/
+/Topics/Inner classes/Improve your vehicle/out/production/classes/
