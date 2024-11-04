@@ -1,11 +1,12 @@
 package numbers;
 
-import java.util.Scanner;
-
 public class Main {
     public static void main(String[] args) {
 
-        CheckNumber checkNumber = new CheckNumber();
+        InputHandler inputHandler = new InputHandler();
+        NumbersList numbersList = new NumbersList();
+
+        CheckNumber checkNumber = new CheckNumber(inputHandler, new NumberChecker(numbersList.getCheckableList()));
         checkNumber.start();
         
     }

@@ -7,14 +7,12 @@ import java.util.Objects;
 
 public class CheckNumber {
 
-    private List<Check> checkables;
-    private InputHandler inputHandler;
-    private NumberChecker numberChecker;
+    private final InputHandler inputHandler;
+    private final NumberChecker numberChecker;
 
-    public CheckNumber() {
-        this.checkables = new NumbersList().getCheckableList();
-        this.inputHandler = new InputHandler();
-        this.numberChecker = new NumberChecker(checkables);
+    public CheckNumber(InputHandler inputHandler, NumberChecker numberChecker) {
+        this.inputHandler = inputHandler;
+        this.numberChecker = numberChecker;
     }
 
     public void start() {
